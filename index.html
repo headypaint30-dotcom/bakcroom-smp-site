@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bakcroom SMP • Minecraft Server & CréaTonic YouTube</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Header Minecraft-style -->
+    <header>
+      <h1><span class="gradient">Bakcroom</span> SMP</h1>
+      <p class="tagline">Survive, Build, Conquer • IA & Création</p>
+      <div class="minecraft-icons">
+        <span class="block grass">🌿</span>
+        <span class="block gold">🟨</span>
+        <span class="block cave">⛏️</span>
+      </div>
+    </header>
+
+    <!-- Section Discord -->
+    <section class="section discord">
+      <h2>Rejoins le Serveur Discord</h2>
+      <p>500+ joueurs • Événements Minecraft • Giveaways • Communauté Bakcroom</p>
+      <a href="https://discord.gg/HhTnfhJvYg" target="_blank" class="btn btn-discord">Rejoindre Discord</a>
+    </section>
+
+    <!-- Section YouTube -->
+    <section class="section youtube">
+      <h2>Chaîne YouTube : CréaTonic</h2>
+      <p>Gameplays Minecraft • Tutos Bakcroom • Lives épiques</p>
+      <a href="https://www.youtube.com/@CréaTonic-k6x" target="_blank" class="btn btn-youtube">S'abonner</a>
+    </section>
+
+    <!-- Chatbot CréaBot -->
+    <section class="section chatbot">
+      <h2>Parle à CréaBot</h2>
+      <p>Ton IA Minecraft pour idées de builds et astuces</p>
+      <div id="chatbox">
+        <div id="messages">
+          <div class="message bot">Salut ! Je suis CréaBot. Prêt pour un build doré ? 🟨</div>
+        </div>
+        <div class="input-area">
+          <input type="text" id="userInput" placeholder="Ex: Idée de base en cave..." />
+          <button onclick="sendMessage()">Envoyer</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Support (formulaire basique) -->
+    <section class="section support">
+      <h2>Support Bakcroom</h2>
+      <p>Problème sur le serveur ? Contacte-nous !</p>
+      <form id="supportForm">
+        <input type="email" placeholder="Ton email" required>
+        <textarea placeholder="Ton message (bug Minecraft ?)" required></textarea>
+        <button type="submit" class="btn btn-support">Envoyer</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Bakcroom SMP • Powered by CréaTonic</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
