@@ -1,0 +1,58 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Press Start 2P', cursive;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0f0f23 100%);
+  color: #ffd700;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container { max-width: 1000px; margin: 0 auto; text-align: center; }
+
+header { margin-bottom: 50px; }
+h1 { font-size: 3em; margin-bottom: 10px; }
+.gradient {
+  background: linear-gradient(45deg, #ffd700, #ffaa00, #ffd700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.tagline { font-size: 1.2em; color: #aaa; margin-bottom: 20px; }
+
+.minecraft-icons {
+  display: flex; justify-content: center; gap: 20px; font-size: 2em; margin-top: 20px;
+}
+.block { display: inline-block; animation: pixel-glow 2s infinite alternate; }
+.grass { color: #4a7c59; }
+.gold { color: #ffd700; text-shadow: 0 0 10px #ffd700; }
+.cave { color: #8b4513; }
+
+@keyframes pixel-glow { 0% { text-shadow: 0 0 5px currentColor; } 100% { text-shadow: 0 0 20px currentColor; } }
+
+.section { margin: 40px 0; padding: 30px; background: rgba(20,20,40,0.8); border-radius: 15px; border: 2px solid #ffd70033; }
+.section h2 { font-size: 1.8em; margin-bottom: 15px; }
+
+.btn {
+  display: inline-block; padding: 15px 30px; margin: 10px; background: linear-gradient(45deg, #ffd700, #ffaa00); color: #000; text-decoration: none; border-radius: 10px; font-weight: bold; font-family: 'Press Start 2P', cursive; font-size: 0.8em; transition: all 0.3s; box-shadow: 0 5px 15px rgba(255,215,0,0.4);
+}
+.btn:hover { transform: scale(1.05); box-shadow: 0 8px 25px rgba(255,215,0,0.6); }
+.btn-discord { background: linear-gradient(45deg, #5865f2, #7289da); color: white; }
+.btn-youtube { background: linear-gradient(45deg, #ff0000, #cc0000); color: white; }
+.btn-support { background: linear-gradient(45deg, #ffd700, #ffaa00); color: #000; width: 100%; }
+
+#chatbox {
+  background: rgba(10,10,20,0.9); border-radius: 10px; overflow: hidden; border: 1px solid #ffd700;
+}
+#messages { height: 300px; padding: 20px; overflow-y: auto; text-align: left; background: #000; }
+.message { margin: 10px 0; padding: 10px; border-radius: 10px; max-width: 80%; display: inline-block; font-family: 'Roboto', sans-serif; }
+.bot { background: #1a1a2e; color: #ffd700; margin-left: 0; }
+.user { background: #ffd700; color: #000; margin-left: auto; text-align: right; }
+.input-area { display: flex; padding: 15px; background: #1a1a2e; }
+#userInput { flex: 1; padding: 10px; border: 1px solid #ffd700; border-radius: 5px; background: #000; color: #ffd700; }
+button { margin-left: 10px; padding: 10px 20px; background: #ffd700; color: #000; border: none; border-radius: 5px; cursor: pointer; font-family: 'Press Start 2P', cursive; }
+
+form { max-width: 500px; margin: 0 auto; }
+input, textarea { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ffd700; border-radius: 5px; background: #000; color: #ffd700; }
+
+footer { margin-top: 50px; color: #aaa; font-size: 0.8em; }
